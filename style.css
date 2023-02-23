@@ -94,7 +94,7 @@ main > section.hero {
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
-  position: sticky;
+  position:sticky;
   position: -webkit-sticky;
   top: 0;
   /* make this banner stick to the top! */
@@ -164,7 +164,6 @@ span.tooltip:focus {
 span.tooltip:hover > span,
 span.tooltip:focus > span {
   display: inline;
-  
   content: '';
   background-color: #074c50;
   border-radius: 10px;
@@ -173,12 +172,9 @@ span.tooltip:focus > span {
   padding: 10px;
   text-align: center;
   width:280px;
-
   height:fit-content;
   font-size: 18px;
 }
-
-
 
 /* styling for tooltip bubble */
 span.tooltip span {
@@ -192,5 +188,13 @@ span.tooltip span {
 /* styling for tooltip bubble arrow */
 span.tooltip span::after {
   content: "";
+  position: absolute;
+  top: 100%; 
+  left: 50%;
+  margin-left: -5px;
+  background-color: #074c50;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #074c50 transparent transparent transparent;
 }
 
