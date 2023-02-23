@@ -150,20 +150,25 @@ span.tooltip {
 }
 .tooltip {
   position: relative;
+  display: inline-block;
 }
 
 /* underline span on hover/focus */
 span.tooltip:hover,
 span.tooltip:focus {
   text-decoration: underline;
-  position: relative;
+  position: absolute;
 }
 
 
 /* show tooltip on hover/focus */
 span.tooltip:hover > span,
 span.tooltip:focus > span {
-  display: inline;
+  visibility: visible;
+}
+
+/* styling for tooltip bubble */
+span.tooltip span {
   content: '';
   background-color: #074c50;
   border-radius: 10px;
@@ -173,16 +178,12 @@ span.tooltip:focus > span {
   text-align: center;
   width:280px;
   height:fit-content;
-  font-size: 18px;
-}
-
-/* styling for tooltip bubble */
-span.tooltip span {
   display: none;
   width: 280px;
   bottom: 100%;
   left: 50%;
   margin-left: -140px;
+  font-size: 18px;
 }
 
 /* styling for tooltip bubble arrow */
