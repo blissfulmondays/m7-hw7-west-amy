@@ -173,17 +173,20 @@ span.tooltip:focus > span {
   padding: 10px;
   text-align: center;
   width:280px;
-  top: -75px;
-  left:0px;
+
   height:fit-content;
   font-size: 18px;
-
 }
+
 
 
 /* styling for tooltip bubble */
 span.tooltip span {
   display: none;
+  width: 280px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -140px;
 }
 
 /* styling for tooltip bubble arrow */
