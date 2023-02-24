@@ -165,7 +165,7 @@ span.tooltip:focus > span {
 /*my changes */
   display: block;
   visibility: visible;
-  width: 250px;
+  width: fit-content;
   background-color:#074c50;
   color: #fff;
   text-align: center;
