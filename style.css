@@ -165,7 +165,7 @@ span.tooltip:focus > span {
 /*my changes */
   display: block;
   visibility: visible;
-  width: fit-content;
+  width: 250px;
   background-color:#074c50;
   color: #fff;
   text-align: center;
@@ -181,6 +181,7 @@ span.tooltip:focus > span {
 /* styling for tooltip bubble */
 span.tooltip span {
   display: none;
+  width:fit-content;
 }
 
 /* styling for tooltip bubble arrow */
